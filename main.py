@@ -303,8 +303,6 @@ class MainWidget(RelativeLayout):
             self.state_game_over = True
             self.menu_widget.opacity = 1
             Clock.schedule_once(self.play_voice_game_over, 1.5)
-            
-            print("GAME OVER")
     
     def play_voice_game_over(self, dt):
         if self.state_game_over:
